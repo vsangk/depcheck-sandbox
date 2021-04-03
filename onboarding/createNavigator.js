@@ -1,5 +1,9 @@
+import { zipObject } from 'lodash';
+
 export default () => {
-  console.log('navigator created');
-  const navigator = {};
+  const navigator = {
+    name: 'navigator',
+    details: zipObject(['a', 'b'], [1, 2]),
+  };
   return navigator;
 };
